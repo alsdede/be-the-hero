@@ -6,14 +6,12 @@
   Be The Hero
 </h4>
 <p align="center">
-  <img alt="login" src=".github/login.png">
-
-  <img alt="mobile login" src=".github/mobile.png"  width="250px">   
+  <img alt="login" src=".github/loginwb.png">
+   
 </p>
 <p align="center">
-  <img alt="profile" src=".github/profile.png">
-
-  <img alt="mobile2" src=".github/mobile2.png" width="250px">   
+  <img alt="profile" src=".github/profilewb.png">
+     
 </p>
 
 <p align="center">
