@@ -13,11 +13,14 @@
   <img alt="profile" src=".github/profilewm.png">
      
 </p>
-
+<p align="center">
+  <img alt="gifs" src=".github/gi1.gif" width="250px">
+  <img alt="gifs" src=".github/gi2.gif" width="250px">  
+</p>
 <br>
 
 <p align="center">
-  <img alt="Frontend" src=".github/logo.png" width="100%">
+  <img alt="Frontend" src=".github/logo.png" width="95px">
 </p>
 
 ##  API
