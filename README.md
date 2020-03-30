@@ -1,19 +1,19 @@
 <h1 align="center">
-    <img alt="BeTheHero" title="#bethehero" src=".github/logo.png" width="250px" />
+    <img alt="BeTheHero" title="#bethehero" src=".github/logo.png" width="95px" />
 </h1>
 
 <h4 align="center">
   Be The Hero
 </h4>
 <p align="center">
-  <img alt="login" src=".github/weblogin.png">
+  <img alt="login" src=".github/login.png">
 
-  <img alt="mobile login" src=".github/mobile.jpeg">   
+  <img alt="mobile login" src=".github/mobile.png"  width="250px">   
 </p>
 <p align="center">
   <img alt="profile" src=".github/profile.png">
 
-  <img alt="mobile2" src=".github/mobile2.jpeg">   
+  <img alt="mobile2" src=".github/mobile2.png" width="250px">   
 </p>
 
 <p align="center">
