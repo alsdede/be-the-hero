@@ -1,10 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
-
+import { Form, Input, Textarea } from '@rocketseat/unform';
+import { toast } from 'react-toastify';
+import * as Yup from 'yup';
 import api from '../../services/api';
 import './styles.css';
 import logoImg from '../../assets/logo.svg';
+
+const schema = Yup.object().shape({
+  title: Yup.string().required('Titulo obrigatório'),
+  description: Yup.string().required('Insira uma descrição'),
+  value: Yup.string().required('Insira um valor'),
+});
 
 export default function NewIncident() {
   const [title, setTitle] = useState('');
@@ -14,9 +22,7 @@ export default function NewIncident() {
   const history = useHistory();
   const ongId = localStorage.getItem('ongId');
 
-  async function handleNewIncident(e) {
-    e.preventDefault();
-
+  async function handleNewIncident() {
     const data = {
       title,
       description,
@@ -29,10 +35,10 @@ export default function NewIncident() {
           Authorization: ongId,
         },
       });
-
+      toast.success('Caso cadastrado com sucesso');
       history.push('/profile');
     } catch (err) {
-      alert('Erro ao cadastrar caso, tente novamente');
+      toast.error('Erro ao cadastrar caso, tente novamente');
     }
   }
   return (
@@ -51,18 +57,21 @@ export default function NewIncident() {
             Voltar para home
           </Link>
         </section>
-        <form onSubmit={handleNewIncident}>
-          <input
+        <Form onSubmit={handleNewIncident} schema={schema}>
+          <Input
+            name="title"
             placeholder="Titulo do caso"
             value={title}
             onChange={e => setTitle(e.target.value)}
           />
-          <textarea
+          <Textarea
+            name="description"
             placeholder="Descrição"
             value={description}
             onChange={e => setDescription(e.target.value)}
           />
-          <input
+          <Input
+            name="value"
             type="text"
             placeholder="Valor em reais"
             value={value}
@@ -72,7 +81,7 @@ export default function NewIncident() {
           <button className="button" type="submit">
             Cadastrar
           </button>
-        </form>
+        </Form>
       </div>
     </div>
   );

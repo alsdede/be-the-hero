@@ -47,6 +47,9 @@
   margin-top: 8px;
 }
 
-
+span {
+  color:red;
+  align-self: flex-start;
+}
 
 

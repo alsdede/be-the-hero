@@ -54,4 +54,13 @@
   margin-left: 8px;
 }
 
+.button:disabled{
+  opacity: 0.6;
+}
 
+span{
+  color:red;
+  align-self: flex-start;
+  justify-content: center;
+
+}
