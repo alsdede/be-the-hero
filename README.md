@@ -6,11 +6,11 @@
   Be The Hero
 </h4>
 <p align="center">
-  <img alt="login" src=".github/loginwb.png">
+  <img alt="login" src=".github/loginwm.png">
    
 </p>
 <p align="center">
-  <img alt="profile" src=".github/profilewb.png">
+  <img alt="profile" src=".github/profilewm.png">
      
 </p>
 
